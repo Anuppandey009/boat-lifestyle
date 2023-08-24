@@ -4,7 +4,11 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch, faUser, faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+import {
+  faSearch,
+  faUser,
+  faShoppingCart,
+} from "@fortawesome/free-solid-svg-icons";
 import FormControl from "react-bootstrap/FormControl";
 import logo from "../../assets/images/1200px-Boat_Logo.webp.png";
 import Button from "react-bootstrap/Button";
@@ -59,20 +63,6 @@ export const NavBar = () => {
                       Separated link
                     </NavDropdown.Item>
                   </NavDropdown>
-                  {/* <FormControl
-                    type="text"
-                    placeholder="Search"
-                    className="mr-sm-2"
-                  />
-                  <Button variant="outline-light">
-                    <FontAwesomeIcon icon={faSearch} />
-                  </Button>
-                  <Nav.Link href="#login">
-                    <FontAwesomeIcon icon={faUser} /> Login
-                  </Nav.Link>
-                  <Nav.Link href="#cart">
-                    <FontAwesomeIcon icon={faShoppingCart} />
-                  </Nav.Link> */}
                 </Nav>
               </Navbar.Collapse>
             </Container>
