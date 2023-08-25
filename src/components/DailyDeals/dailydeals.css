@@ -1,0 +1,37 @@
+.daily-deals-container {
+  position: relative;
+  width: 100%;
+}
+
+.image-container {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  display: flex;
+   color: black; 
+   justify-content: space-between;
+   gap: 50px;
+   white-space: nowrap; 
+}
+.sales{
+    margin-top: 20px;
+    margin-left: -10%;
+}
+
+.timer{
+    margin-top: 20px;
+}
