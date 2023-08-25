@@ -21,3 +21,4 @@ const HomeCarousel = () => {
 };
 
 export default HomeCarousel;
+

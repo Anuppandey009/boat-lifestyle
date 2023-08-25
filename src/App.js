@@ -1,14 +1,16 @@
 
+import { NavBar } from './components/Navbar/NavBar';
+import ScrollToTop from './components/ScrollToTop';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import HomeCarousel from './components/HomeCarousel';
-import BestSeller from './components/BestSeller';
 
+import Home from './components/Home/Home';
 
 function App() {
   return (
-    <div className="App">
-    <HomeCarousel/>
-    {/* <BestSeller/> */}
+    <div className="App" >
+    <NavBar /> 
+       {/* <Home/>  */}
+       
     </div>
   );
 }
