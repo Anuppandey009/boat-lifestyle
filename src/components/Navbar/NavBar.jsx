@@ -16,12 +16,15 @@ export const NavBar = () => {
   return (
     <>
       <div className="navbar">
-        <div className="pre-navbar">
+        {/* <div className="pre-navbar">
           <p>
             Get legendary sound at a legendary price. <b>Airpods 131 </b> is now
             at <b>₹999</b>. Shop Now!{" "}
           </p>
-        </div>
+        </div> */}
+      </div>
+
+      <div className="parent-container">
         <div className="mainNavbar">
           <div className="navLogo">
             <img className="logo" src={logo} alt="" />
@@ -67,6 +70,15 @@ export const NavBar = () => {
               </Navbar.Collapse>
             </Container>
           </Navbar>
+        </div>
+        <div className="search-cart-login">
+          <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+          <Nav.Link href="#link">
+            <FontAwesomeIcon icon={faUser} />
+          </Nav.Link>
+          <Nav.Link href="#link">
+            <FontAwesomeIcon icon={faShoppingCart} />
+          </Nav.Link>
         </div>
       </div>
     </>
