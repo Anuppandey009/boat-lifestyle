@@ -4,7 +4,12 @@
   background-color: #ffffff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding: 10px;
-  
+    top: 0;
+    position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
 }
 
 
@@ -17,13 +22,15 @@
   line-height: 40px;
   position: fixed;
   top: 0px;
-  width: 100%;
+  width: 150%;
   font-size: small;
   z-index: 10;
 }
 .post-navbar {
   display: flex;
   margin-top: 40px;
+  display: flex;
+    margin-top: 70px;
   justify-content: space-between;
 
 }
@@ -62,38 +69,12 @@
 .navbar {
   margin-top: -7px;
 }
-.mainNavbar {
-  box-sizing: border-box;
-  height: 70px;
-  padding: 0% 2%;
-  position: -webkit-sticky;
-  position: fixed;
-  width: 100%;
-  top: 40px;
-  z-index: 10;
-  display: flex;
-  align-items: center;
-  flex-grow: 1;
-}
 
 .search-cart-login {
   display: flex;
   align-items: center;
 }
 
-.mainNavbar {
-  display: flex;
-  /* Use flex display to enable flexbox layout */
-  align-items: center;
-  /* Center vertically */
-  box-sizing: border-box;
-  height: 70px;
-  padding: 0 2%;
-  position: fixed;
-  width: 100%;
-  top: 40px;
-  z-index: 10;
-}
 .navbar-nav .nav-link {
   color: black;
 }
