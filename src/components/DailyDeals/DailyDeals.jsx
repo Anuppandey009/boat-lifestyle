@@ -44,6 +44,7 @@ const DailyDeals = () => {
     };
   }
 
+
   return (
     <div className="daily-deals-container">
       <div className="image-container">
@@ -53,12 +54,17 @@ const DailyDeals = () => {
             <h2>Summer Sales with Upto 80% off is here</h2>
           </div>
           <div className="timer">
-           <div>
-             <h2>
-              {timeLeft.days} days : {timeLeft.hours}hr : {timeLeft.minutes}m{" "}:
-              {timeLeft.seconds}s
-            </h2>
-           </div>
+            <div className="vertical-line"></div>
+            <div>
+              <span>Ending In</span>
+              <span></span>
+             
+              <span>
+               <b>{timeLeft.days}</b>Days : <b>{timeLeft.hours}</b>Hours :{" "}
+                <b>{timeLeft.minutes}</b>Mins : <b>{timeLeft.seconds}</b>sec
+              </span>
+            </div>
+            
           </div>
         </div>
       </div>

@@ -19,19 +19,44 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
   display: flex;
-   color: black; 
-   justify-content: space-between;
-   gap: 50px;
-   white-space: nowrap; 
-}
-.sales{
-    margin-top: 20px;
-    margin-left: -10%;
+  align-items: center;
 }
 
-.timer{
-    margin-top: 20px;
+.sales {
+  flex: 1;
+  margin-left: -12%;
+}
+
+.sales h2 {
+  font-size: 24px;
+  margin: 0;
+   white-space: nowrap; /* Add this line to make the text in one line */
+  overflow: hidden; /* Optional: Hide any overflow */
+  text-overflow: ellipsis;
+}
+
+.timer {
+  display: flex;
+  align-items: center;
+  margin-left: -10%;
+}
+
+.timer h2 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.timer span {
+  font-size: 16px;
+  margin-left: 5px;
+  white-space: nowrap;
+  font-size: 24px; 
+}
+
+.vertical-line {
+  width: 1px;
+  height: 50px;
+  background-color: black;
+  margin: 0 20px;
 }
