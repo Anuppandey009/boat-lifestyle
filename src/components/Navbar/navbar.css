@@ -40,9 +40,11 @@
 }
 .right-navbar-side {
   display: flex;
+  gap: 3px ;   
   justify-content: space-between;
-  margin-right: -32%;
+  margin-right: -33%;
   margin-top: 1%px;
+  align-items: center;
 }
 .right-navbar-side .mr-sm-2 {
   width: 280px; /* Adjust the width as needed */
@@ -51,12 +53,16 @@
   border-radius: 50px; /* This is the key for creating the elliptical shape */
   outline: none; /* Remove the default outline */
   transition: border-color 0.3s ease-in-out; /* Adjust this value as needed */
+
+ 
 }
 .user-icon{
     margin-top: 2%;
+    margin-right: -5%; 
 }
 .ShoppingCartIcon{
      margin-top: 2%;
+      margin-right: 5%;
 }
 
 
@@ -73,8 +79,11 @@
 .search-cart-login {
   display: flex;
   align-items: center;
+ 
 }
-
+.search{
+     margin-right: -5%;
+}
 .navbar-nav .nav-link {
   color: black;
 }
