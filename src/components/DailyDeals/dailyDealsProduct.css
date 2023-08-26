@@ -38,6 +38,11 @@
   border-radius: 6px;
   border: 1px solid #ddd;
 }
+.product-card img:hover {
+  transform: scale(1.05); /* Enlarge the image on hover */
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
 
 /* dailyDealsProduct.css */
 
