@@ -15,6 +15,7 @@ const dailyDealsProductSlice = createSlice({
       state.data = actions.payload;
     },
   },
+ 
 });
 
 export const { fetchProducts } = dailyDealsProductSlice.actions;
