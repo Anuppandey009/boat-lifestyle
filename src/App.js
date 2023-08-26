@@ -13,12 +13,12 @@ import DailyDealsProduct from "./components/DailyDeals/DailyDealsProduct";
 function App() {
   return (
     <div className="App">
-      {/* <NavBar />
+      <NavBar />
       <ScrollToTop />
       <Home />
       <BestSellers />
-      <DailyDealsBanner/> */}
-      {/* <DailyDealsProduct/> */}
+      <DailyDealsBanner/>
+      <DailyDealsProduct/>
     </div>
   );
 }
