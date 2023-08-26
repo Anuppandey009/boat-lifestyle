@@ -1,0 +1,22 @@
+/* dailyDealsProduct.css */
+.product-slider-container {
+  width: 90%;
+  margin: 0 auto; /* Center the slider */
+}
+
+.product-card {
+  width: 100%; /* Each product card takes 100% of slider width */
+  text-align: center;
+  display: flex;
+  margin: auto;
+  margin-left: -1%;
+}
+
+/* Add your custom styles for slick arrows if needed */
+.slick-arrow {
+  font-size: 60px;
+  color: #000; /* Adjust the color as needed */
+  /* background-color: transparent; */
+  border: none;
+  cursor: pointer;
+}

@@ -3,7 +3,9 @@ import ScrollToTop from "./components/ScrollToTop";
 import "bootstrap/dist/css/bootstrap.min.css";
  import Home from './components/Home/Home';
 import BestSellers from './components/bestseller/BestSellers';
-import DailyDeals from "./components/DailyDeals/DailyDeals";
+import DailyDeals from "./components/DailyDeals/DailyDealsBanner";
+import DailyDealsBanner from "./components/DailyDeals/DailyDealsBanner";
+import DailyDealsProduct from "./components/DailyDeals/DailyDealsProduct";
 
 
 
@@ -11,11 +13,12 @@ import DailyDeals from "./components/DailyDeals/DailyDeals";
 function App() {
   return (
     <div className="App">
-      <NavBar />
+      {/* <NavBar />
       <ScrollToTop />
       <Home />
       <BestSellers />
-      <DailyDeals/>
+      <DailyDealsBanner/> */}
+      {/* <DailyDealsProduct/> */}
     </div>
   );
 }

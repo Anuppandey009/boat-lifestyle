@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import dailyDealsImage from "../../assets/images/Daily-Deal.webp";
-import "./dailydeals.css";
+import "./dailyDealsBanner.css";
 
-const DailyDeals = () => {
+const DailyDealsBanner = () => {
   const [timeLeft, setTimeLeft] = useState(getTimeLeftUntilSale());
 
   useEffect(() => {
@@ -71,4 +71,4 @@ const DailyDeals = () => {
   );
 };
 
-export default DailyDeals;
+export default DailyDealsBanner;
