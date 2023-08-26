@@ -46,13 +46,12 @@
   align-items: center;
 }
 .right-navbar-side .mr-sm-2 {
-  width: 280px; /* Adjust the width as needed */
+  width: 280px; 
   padding: 8px;
   border: 2px solid #ccc;
-  border-radius: 50px; /* This is the key for creating the elliptical shape */
-  outline: none; /* Remove the default outline */
-  transition: border-color 0.3s ease-in-out; /* Adjust this value as needed */
-
+  border-radius: 50px; 
+  outline: none; 
+  transition: border-color 0.3s ease-in-out; 
  
 }
 .user-icon{

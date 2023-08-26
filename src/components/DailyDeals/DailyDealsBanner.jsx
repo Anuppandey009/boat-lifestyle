@@ -14,7 +14,7 @@ const DailyDealsBanner = () => {
   }, []);
 
   function getTimeLeftUntilSale() {
-    const saleDate = new Date("2023-09-01T12:00:00"); // Replace with your sale's start date
+    const saleDate = new Date("2023-09-01T12:00:00"); 
     const now = new Date();
     const timeDifference = saleDate - now;
 

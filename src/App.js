@@ -16,7 +16,7 @@ function App() {
       <NavBar />
       <ScrollToTop />
       <Home />
-      {/* <BestSellers /> */}
+      <BestSellers />
       <DailyDealsBanner/>
       <DailyDealsProduct/>
     </div>
