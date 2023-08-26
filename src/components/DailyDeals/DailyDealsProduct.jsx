@@ -1,14 +1,16 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import { getProducts } from "../../store/DailyDealsProductsSlice";
 import "./dailyDealsProduct.css";
 
 const DailyDealsProduct = () => {
   const dispatch = useDispatch();
-  const { data: dailyDealsProducts } = useSelector(state => state.dailyDealsProducts);
+  const { data: dailyDealsProducts } = useSelector(
+    (state) => state.dailyDealsProducts
+  );
 
   useEffect(() => {
     dispatch(getProducts());
@@ -29,25 +31,24 @@ const DailyDealsProduct = () => {
       },
     ],
     prevArrow: <PrevArrow />,
-    nextArrow: <NextArrow />
+    nextArrow: <NextArrow />,
   };
 
   const dailyDealsProductsCard = dailyDealsProducts.map((product) => (
-    <div key={product.id} className='product-card'>
-      <p>{product.category}</p>
-      <img
-        src={product.image}
-        alt={product.category}
-        style={{ width: '100px', height: '130px' }}
-      />
+    <div className="parent-continer">
+      <div key={product.id} className="product-card">
+        <img src={product.image} alt={product.category} />
+        
+        <p className="product-title"> {product.title}</p>
+        <p className="product-price">₹{product.price}</p>
+        <button className="add-to-cart-button">Add to Cart</button>
+      </div>
     </div>
   ));
 
   return (
     <div className="product-slider-container">
-      <Slider {...settings}>
-        {dailyDealsProductsCard}
-      </Slider>
+      <Slider {...settings}>{dailyDealsProductsCard}</Slider>
     </div>
   );
 };

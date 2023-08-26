@@ -2,21 +2,61 @@
 .product-slider-container {
   width: 90%;
   margin: 0 auto; /* Center the slider */
+ 
+}
+.parent-continer{
+    display: flex;
+    margin-bottom: 2%;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .product-card {
-  width: 100%; /* Each product card takes 100% of slider width */
+   width: 90%;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
-  display: flex;
-  margin: auto;
-  margin-left: -1%;
 }
 
 /* Add your custom styles for slick arrows if needed */
 .slick-arrow {
   font-size: 60px;
   color: #000; /* Adjust the color as needed */
-  /* background-color: transparent; */
+  background-color: transparent;
   border: none;
   cursor: pointer;
 }
+
+.product-card img {
+  width: 200px; 
+  height: 230px; 
+  display: flex;
+  margin: 0 auto; 
+  object-fit: cover; 
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+/* dailyDealsProduct.css */
+
+.product-title {
+  font-weight: bold;
+  white-space: nowrap; /* Prevent the text from wrapping to the next line */
+  overflow: hidden; /* Hide any overflow beyond the container */
+  text-overflow: ellipsis; /* Show an ellipsis (...) for text that overflows */
+  margin: 5px 0; /* Optional margin for spacing */
+}
+
+.add-to-cart-button {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
