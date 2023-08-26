@@ -60,3 +60,18 @@
   background-color: black;
   margin: 0 20px;
 }
+
+
+.daily-deals {
+  font-size: 24px; /* Adjust the font size as needed */
+  margin-left: 5%;
+  margin-top: 2%;
+}
+
+.deals {
+  font-weight: bold;
+}
+
+.underline {
+  text-decoration: underline;
+}

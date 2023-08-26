@@ -38,10 +38,17 @@ const DailyDealsProduct = () => {
     <div className="parent-continer">
       <div key={product.id} className="product-card">
         <img src={product.image} alt={product.category} />
-        
-        <p className="product-title"> {product.title}</p>
-        <p className="product-price">₹{product.price}</p>
-        <button className="add-to-cart-button">Add to Cart</button>
+        <p className="product-rating">
+          <span className="star-icon">&#9733;</span> {product.rating.rate}
+        </p>
+
+        <div className="product-details">
+          <div className="left-details">
+            <p className="product-title">{product.title}</p>
+            <p className="product-price">₹{product.price}</p>
+          </div>
+          <button className="add-to-cart-button">Add to Cart</button>
+        </div>
       </div>
     </div>
   ));

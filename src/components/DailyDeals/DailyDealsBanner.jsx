@@ -44,9 +44,14 @@ const DailyDealsBanner = () => {
     };
   }
 
-
   return (
     <div className="daily-deals-container">
+      <p className="daily-deals">
+        Daily{" "}
+        <span className="deals">
+          De<span class="underline">als</span>
+        </span>
+      </p>
       <div className="image-container">
         <img src={dailyDealsImage} alt="Sale Banner" className="image" />
         <div className="text-container">
@@ -58,9 +63,9 @@ const DailyDealsBanner = () => {
             <div>
               <span>Ending In</span>
               <span></span>
-             
+
               <span>
-               <b>{timeLeft.days}</b>Days : <b>{timeLeft.hours}</b>Hours :{" "}
+                <b>{timeLeft.days}</b>Days : <b>{timeLeft.hours}</b>Hours :{" "}
                 <b>{timeLeft.minutes}</b>Mins : <b>{timeLeft.seconds}</b>sec
               </span>
             </div>
