@@ -64,7 +64,6 @@ const DailyDeals = () => {
                 <b>{timeLeft.minutes}</b>Mins : <b>{timeLeft.seconds}</b>sec
               </span>
             </div>
-            
           </div>
         </div>
       </div>
